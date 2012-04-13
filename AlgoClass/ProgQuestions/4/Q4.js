@@ -120,37 +120,6 @@ fs.readFile('SCC.txt', 'utf8', function (err, data) {
   console.log(leaderCount[2]);
   console.log(leaderCount[3]);
   console.log(leaderCount[4]);
-
-
-  //var bla = 0;
-  //for (j = 0; j < n; j ++) { 
-    //bla += orderSecondIteration[j];
-    //if (orderSecondIteration[j] === 0) { console.log("==== " + j);}
-  //}
-
-
-  //console.log(bla);
-  //console.log(n * (n+1) / 2);
 });
-
-
-
-var firstIteration = function(root) {
-  var j;
-
-  exploredRev[root] = true;
-
-  for (j = 0; j < reversedGraph[root].length; j += 1) {
-    if (! exploredRev[reversedGraph[root][j]]) {
-      firstIteration(j);
-    }
-  }
-
-  t += 1;
-  finishingtimes[root] = t;
-}
-
-
-
 
 
