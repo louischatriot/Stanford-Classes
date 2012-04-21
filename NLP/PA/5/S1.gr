@@ -2,14 +2,15 @@
 
 # These two rules are required; choose their weights carefully!
 99	START	S1
-1	START	S2
+0	START	S2
 
 # This is a very, very, very simple grammar to get you started.
 
-1	S1	NP VP .
+1	S1	NP VP EndOS
 
 1	VP	VerbT NP
 
+1	NP	NounP
 20	NP	Det Nbar
 1	NP	Proper
 
@@ -17,3 +18,29 @@
 1	Nbar	Nbar PP
 
 1	PP	Prep NP
+
+1	Location	Prep Proper
+
+
+
+1	S1	VerbPP Prep Proper VerbT Adj EndOS
+
+
+
+# Questions
+
+1	S1	Question
+
+1	Question	Interrogation NP PronomVP ?
+1	Question	InterInv NP PronomVP ?
+
+
+1	Interrogation	DoDoes
+1	Interrogation	WH DoDoes
+
+1	InterInv	Misc PersPro VerbPP
+
+1	PronomVP	VerbBase
+1	PronomVP	VerbBase NP
+1	PronomVP	VerbBase Location
+1	PronomVP	VerbBase PersPro VerbBase

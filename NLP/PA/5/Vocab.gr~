@@ -202,15 +202,14 @@
 1	Proper	Saxons
 
 # Personal pronouns.
-1	PersPro	he
-1	PersPro	her
-1	PersPro	him
-1	PersPro	it
-1	PersPro	one
-1	PersPro	she
-1	PersPro	them
-1	PersPro	they
-7	Misc	PersPro
+1	Misc	he
+1	Misc	her
+1	Misc	him
+1	Misc	it
+1	Misc	one
+1	Misc	she
+1	Misc	them
+1	Misc	they
 
 
 # Possessive personal pronouns
