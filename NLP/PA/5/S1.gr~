@@ -8,11 +8,11 @@
 
 1	S1	NP VP EndOS
 
-1	VP	VerbT NP
-1	VP	VerbT
+1	VP	Verb NP
+1	VP	Verb
 1	VP	DoDoes
 
-1	NP	NounP
+1	NP	Noun
 20	NP	Det Nbar
 1	NP	Proper
 
@@ -25,7 +25,7 @@
 
 
 
-1	S1	VerbPP Prep Proper VerbT Adj EndOS
+1	S1	Verb Prep Proper Verb Adj EndOS
 
 
 
@@ -40,16 +40,38 @@
 1	Interrogation	DoDoes
 1	Interrogation	WH DoDoes
 
-1	InterInv	Misc PersPro VerbPP
+1	InterInv	Misc PersPro Verb
 
-1	PronomVP	VerbBase
-1	PronomVP	VerbBase NP
-1	PronomVP	VerbBase Location
-1	PronomVP	VerbBase PersPro VerbBase
+1	PronomVP	Verb
+1	PronomVP	Verb NP
+1	PronomVP	Verb Location
+1	PronomVP	Verb PersPro Verb
 
 
 # Either/Neither
 1	S1	either NP VP or NP VP .
 1	S1	neither NP nor NP will speak of it .
+
+
+
+
+# Taken from somewhere else
+1	S1	NP VP
+1	S1	DoDoes NP VP
+1	S1	VP
+
+1	NP	PersPro
+1	NP	Proper
+1	NP	Det Nominal
+
+1	Nominal	Noun
+1	Nominal Nominal Noun
+1	Nominal Nominal PP
+
+1	PP	Prep NP
+
+1	VP	Verb
+1	VP	Verb NP
+1	VP	VP PP
 
 
