@@ -185,10 +185,8 @@ public class FeatureFactory {
       //features.add("case=lower");
       //}
 
-      //if (position >= 2) {
-      //if (words.get(position - 1).equals("said") && words.get(position - 2).equals("\"")) {
-      //features.add("quotesaid");
-      //}
+      //if (position >= 1) {
+        //features.add("double" + words.get(position - 1) + currentWord);
       //}
 
       //if ((position >= 1) && (position <= words.size() - 2)) {
