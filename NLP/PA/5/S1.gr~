@@ -9,6 +9,8 @@
 1	S1	NP VP EndOS
 
 1	VP	VerbT NP
+1	VP	VerbT
+1	VP	DoDoes
 
 1	NP	NounP
 20	NP	Det Nbar
@@ -43,5 +45,11 @@
 1	PronomVP	VerbBase
 1	PronomVP	VerbBase NP
 1	PronomVP	VerbBase Location
+1	PronomVP	VerbBase PersPro VerbBase
+
+
+# Either/Neither
+1	S1	either NP VP or NP VP .
+1	S1	neither NP nor NP will speak of it .
 
 
