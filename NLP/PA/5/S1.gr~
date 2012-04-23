@@ -12,14 +12,18 @@
 1	VP	Verb
 1	VP	DoDoes
 
-1	NP	Noun
-20	NP	Det Nbar
-1	NP	Proper
+#1	NP	Noun
+#20	NP	Det Nbar
+#1	NP	ProperGroup
 
-20	Nbar	Noun
-1	Nbar	Nbar PP
+#8	ProperGroup	Proper
+#1	ProperGroup	Det Proper
 
-1	PP	Prep NP
+
+#20	Nbar	Noun
+#1	Nbar	Nbar PP
+
+#1	PP	Prep NP
 
 1	Location	Prep Proper
 
@@ -40,7 +44,7 @@
 1	Interrogation	DoDoes
 1	Interrogation	WH DoDoes
 
-1	InterInv	Misc PersPro Verb
+1	InterInv	Verb PersPro Verb
 
 1	PronomVP	Verb
 1	PronomVP	Verb NP
@@ -55,23 +59,25 @@
 
 
 
-# Taken from somewhere else
-1	S1	NP VP
-1	S1	DoDoes NP VP
-1	S1	VP
+# A general mine
+1	S1	NP Verb NP .
 
-1	NP	PersPro
-1	NP	Proper
-1	NP	Det Nominal
+1	S1	NP Modal Verb ModalVP .
+1	ModalVP	Verb
+1	ModalVP	Verb Prep NP
 
-1	Nominal	Noun
-1	Nominal Nominal Noun
-1	Nominal Nominal PP
+1	S1	NP Verb Verb NP .
 
-1	PP	Prep NP
 
-1	VP	Verb
-1	VP	Verb NP
-1	VP	VP PP
+1	NP	Nbar
+20	NP	Det Nbar
+10	NP	ProperGroup
+1	NP	NP NP
+1	NP	Prep NP	
 
+8	ProperGroup	Proper
+1	ProperGroup	Det Proper
+
+5	Nbar	Noun
+1	Nbar	Adj Noun
 
