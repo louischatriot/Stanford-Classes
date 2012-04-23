@@ -2,7 +2,7 @@
 
 # These two rules are required; choose their weights carefully!
 99	START	S1
-0	START	S2
+10	START	S2
 
 
 
@@ -53,7 +53,7 @@
 6	VP	Verb Verb
 4	VP	DoDoes
 2	VP	Verb Verb Verb
-1	VP	Modal Verb Verb Verb
+1	VP	Modal VP
 
 
 1	NP	Nbar
@@ -69,4 +69,7 @@
 5	Nbar	Noun
 1	Nbar	Adj Noun
 
+
+
+1	S1	NP , NP , VP .
 
