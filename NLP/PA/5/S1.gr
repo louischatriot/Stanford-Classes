@@ -4,34 +4,9 @@
 99	START	S1
 0	START	S2
 
-# This is a very, very, very simple grammar to get you started.
-
-1	S1	NP VP EndOS
-
-1	VP	Verb NP
-1	VP	Verb
-1	VP	DoDoes
-
-#1	NP	Noun
-#20	NP	Det Nbar
-#1	NP	ProperGroup
-
-#8	ProperGroup	Proper
-#1	ProperGroup	Det Proper
 
 
-#20	Nbar	Noun
-#1	Nbar	Nbar PP
-
-#1	PP	Prep NP
-
-1	Location	Prep Proper
-
-
-
-1	S1	Verb Prep Proper Verb Adj EndOS
-
-
+1	S1	Verb NP Verb Adj EndOS
 
 # Questions
 
@@ -54,13 +29,14 @@
 
 # Either/Neither
 1	S1	either NP VP or NP VP .
-1	S1	neither NP nor NP will speak of it .
+1	S1	neither NP nor NP VP .
 
 
 
 
 # A general mine
-1	S1	NP Verb NP .
+3	S1	VP NP .
+1	S1	VP Coord VP .
 
 1	S1	NP Modal Verb ModalVP .
 1	ModalVP	Verb
@@ -69,9 +45,21 @@
 1	S1	NP Verb Verb NP .
 
 
+10	VP	NP VP
+5	VP	VP NP
+
+20	VP	Verb
+2	VP	Verb Adv
+6	VP	Verb Verb
+4	VP	DoDoes
+2	VP	Verb Verb Verb
+1	VP	Modal VP
+
+
 1	NP	Nbar
 20	NP	Det Nbar
 10	NP	ProperGroup
+5	NP	PersPro
 1	NP	NP NP
 1	NP	Prep NP
 
@@ -80,4 +68,5 @@
 
 5	Nbar	Noun
 1	Nbar	Adj Noun
+
 
