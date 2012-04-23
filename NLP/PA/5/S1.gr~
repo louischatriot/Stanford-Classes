@@ -2,7 +2,7 @@
 
 # These two rules are required; choose their weights carefully!
 99	START	S1
-10	START	S2
+0	START	S2
 
 
 
@@ -36,6 +36,7 @@
 
 # A general mine
 3	S1	VP NP .
+1	S1	NP VP .
 1	S1	VP Coord VP .
 
 1	S1	NP Modal Verb ModalVP .
@@ -72,4 +73,4 @@
 
 
 1	S1	NP , NP , VP .
-
+1	S1	NP VP , NP .

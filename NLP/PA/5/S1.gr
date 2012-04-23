@@ -36,6 +36,7 @@
 
 # A general mine
 3	S1	VP NP .
+1	S1	NP VP .
 1	S1	VP Coord VP .
 
 1	S1	NP Modal Verb ModalVP .
@@ -56,6 +57,7 @@
 1	VP	Modal VP
 
 
+2	NP	NP Coord NP
 1	NP	Nbar
 20	NP	Det Nbar
 10	NP	ProperGroup
@@ -72,4 +74,4 @@
 
 
 1	S1	NP , NP , VP .
-
+1	S1	NP VP , NP .
