@@ -339,13 +339,14 @@
 
 # End-of-sentence.
 1	EndOS	!
-1	EndOS	.
+10	EndOS	.
 1	EndOS	?
 3	Misc	EndOS
 
 # Pauses.
-1	Misc	,
-1	Misc	...
-1	Misc	--
-1	Misc	;
-1	Misc	:
+1	Pause	,
+1	Pause	...
+1	Pause	--
+1	Pause	;
+1	Pause	:
+5	Misc	Pause

@@ -263,11 +263,11 @@
 
 
 # Subordinating conjunctions.
-1	Subord	that
-1	Subord	so
-1	Subord	while
-1	Subord	because
-1	Subord	if
+1	Coord	that
+1	Coord	so
+1	Coord	while
+1	Coord	because
+1	Coord	if
 
 
 
@@ -339,7 +339,7 @@
 
 # End-of-sentence.
 1	EndOS	!
-1	EndOS	.
+10	EndOS	.
 1	EndOS	?
 3	Misc	EndOS
 
