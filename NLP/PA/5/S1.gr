@@ -23,7 +23,7 @@
 
 1	PronomVP	Verb
 1	PronomVP	Verb NP
-1	PronomVP	Verb Location
+#1	PronomVP	Verb Location
 1	PronomVP	Verb PersPro Verb
 
 
