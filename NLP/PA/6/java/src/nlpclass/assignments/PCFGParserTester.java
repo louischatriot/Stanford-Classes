@@ -39,11 +39,11 @@ public class PCFGParserTester {
    * The PCFG Parser you will implement.
    */
   public static class PCFGParser implements Parser {
-    
+
     private Grammar grammar;
     private Lexicon lexicon;
 
-    
+
     public void train(List<Tree<String>> trainTrees) {
       // TODO: before you generate your grammar, the training trees
       // need to be binarized so that rules are at most binary
@@ -53,7 +53,7 @@ public class PCFGParserTester {
 
     }
 
-    
+
     public Tree<String> getBestParse(List<String> sentence) {
       // TODO: implement this method
 
